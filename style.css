@@ -64,7 +64,7 @@ header>nav>button>a{
     color: white;
 
 }
-header>button{
+header>.logo>button{
     background-color: var(--secoundry-color);
     width: 14%;
     margin: 10px;
@@ -78,7 +78,6 @@ main{
 section{
     display: flex;
     width: 100%;
-   
 }
 section:not(#home){
     margin-top: 40px;
@@ -197,6 +196,8 @@ footer{
     background-color: var(--main-color);
     padding: 5% 0 0 10%;
     text-align: center;
+    height: min-content;
+    margin: 0;
 }
 footer h4{
     font-weight: bold;
@@ -205,7 +206,6 @@ footer h4{
 footer>.contaner{
     display: flex;
     text-align: left;
-    
 }
 footer>.contaner>.logo{
     width: 20%;
@@ -227,4 +227,101 @@ footer>.contaner>.linkes{
 }
 footer>p{
     margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px){
+   header{
+    display: block;
+    padding: 10px;
+    height: min-content;
+   }
+    header>.logo{
+      width: 100%;
+    }
+    header>nav{
+        display: none;
+        margin: 0;
+        text-align: center;
+      
+    }
+    header>nav>ul{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    header>nav>ul>li{
+       width: 100%;
+    }
+    header>nav>button{
+       width: 100%;
+    }
+    header>.logo>button {
+      position: absolute;
+      right: 0;
+        display: inline;
+        margin: 10px;
+    }
+    section{
+        display: block;
+        width: 100%;
+    }
+    #home>.text{
+        width: 100%;
+    }
+    #register>img{
+        width: 100%;
+    }
+    #register>.text{
+        width: 100%;
+        
+    }
+    .subscribe>input ,.subscribe>button{
+        width: 90%;
+    }
+    #growing>.left{
+        width: 100%;
+    }
+    #growing>.right{
+        margin-left: -55%;
+        width: 90%;
+
+    }
+    
+#growing>.right>.ellipses>img:first-of-type{
+    bottom: 80px;
+    left: 100%;
+}
+#growing>.right>.ellipses>img:nth-of-type(2){
+    top: -5px;
+    left: 50%;
+}
+#growing>.right>.ellipses>img:nth-of-type(3){
+bottom:150px;
+left: 80%;
+
+}
+#growing>.right>.ellipses>img:nth-of-type(4){
+top: 100px;
+right: 0;
+}
+footer>.contaner{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+footer>p{
+    padding-bottom: 50px;
+}
+footer>.contaner>.linkes{
+   margin: 10px auto;
+}
+footer>.contaner>.logo{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+footer>.contaner>.follow{
+margin: 10px auto;
+  
+}
 }
