@@ -1,0 +1,230 @@
+:root{
+    --primary-color:#682C0E;
+    --secoundry-color:#C24914;
+    --secoundry-light:#FC8621;
+    --light-color:#DAC0A3;
+    --main-color:#F9E0AE;
+    --main-light:#EADBC8;
+}
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: var(--main-color);
+    padding: 50px 0 0px 50px;
+} 
+button>a{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+button,button:focus,button::marker,input,input:focus,input::marker{
+    border: none;
+}
+header>.logo{
+    flex:0 0 auto;
+    width: 20%;
+}
+header>nav{
+    flex: 0 0 auto;
+    width: 75%;
+    display: flex;
+    margin-left: 60px;
+}
+header>nav>ul{
+    display: flex;
+    list-style: none;
+    width: 50%;
+}
+header>nav>ul>li{
+    margin: 12px 35px;
+    font-weight: bold;
+    font-size: larger;
+}
+header>nav>button{
+    background-color: var(--secoundry-color);
+    width: 14%;
+    margin: 10px;
+    height: 40px;
+    border-radius:5px ;
+}
+header>nav>button>a{
+    color: white;
+
+}
+header>button{
+    background-color: var(--secoundry-color);
+    width: 14%;
+    margin: 10px;
+    height: 40px;
+    border-radius:5px;
+    display: none;
+}
+main{
+    padding: 10%;
+}
+section{
+    display: flex;
+    width: 100%;
+   
+}
+section:not(#home){
+    margin-top: 40px;
+}
+#home>.text{
+    width: 50%;
+    padding: 10% 0;
+}
+#home>.text>h1{
+    font-size: 70px;
+    font-weight: bolder;
+    margin: 0;
+}
+#home>.text>button{
+    background-color: var(--primary-color);
+ padding: 10px;
+ width: 40%;
+ border-radius: 10px;
+ margin: 10px 0;
+ padding: 10px;
+}
+#center>.text{
+    flex: 0 0 auto;
+    padding: 5%;
+}
+#center>.text>h1{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+#center>.text>ul{
+    margin-top: 20px;
+}
+
+#register>img{
+    width: 50%;
+}
+#register>.text{
+    width: 50%;
+    
+}
+#register>.text>h1{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: left;
+} 
+.subscribe{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+.subscribe>input ,.subscribe>button{
+    width: 32%;
+    margin-left: 10px;
+}
+.subscribe>input::placeholder{
+    text-align: center;
+    font-weight: bold;
+}
+.subscribe>button{
+    background-color: var(--secoundry-color);
+    color: white;
+    font-weight: bold;
+}
+#growing{
+    position: relative;
+    padding: 10% 0;
+}
+#growing>.left{
+    width: 70%;
+    text-align: center;
+    z-index: 5;
+}
+#growing>.left>h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+}
+#growing>.left>button{
+    background-color: var(--secoundry-light);
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+#growing>.right{
+    width: 100%;
+    position: relative;
+    margin-left: -35%;
+    padding: 0;
+    z-index: 1;
+}
+#growing>.right>.ellipses>img{
+    position: absolute;
+    z-index: 500;
+}
+#growing>.right>.ellipses>img:first-of-type{
+    bottom: 80px;
+    left: 70px;
+}
+#growing>.right>.ellipses>img:nth-of-type(2){
+    top: -5px;
+    left: 40%;
+}
+#growing>.right>.ellipses>img:nth-of-type(3){
+bottom:150px;
+left: -50px;
+
+}
+#growing>.right>.ellipses>img:nth-of-type(4){
+top: 100px;
+right: 0;
+}
+footer{
+    background-color: var(--main-color);
+    padding: 5% 0 0 10%;
+    text-align: center;
+}
+footer h4{
+    font-weight: bold;
+ font-size: large;
+}
+footer>.contaner{
+    display: flex;
+    text-align: left;
+    
+}
+footer>.contaner>.logo{
+    width: 20%;
+}
+footer>.contaner>.follow{
+    width: 20%;
+    font-size: larger;
+}
+footer>.contaner>.follow>ul{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+footer>.contaner>.follow>ul>li{
+    margin-right: 10px;
+}
+footer>.contaner>.linkes{
+    width: 20%;
+}
+footer>p{
+    margin-top: 50px;
+}
